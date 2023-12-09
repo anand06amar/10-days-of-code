@@ -1,4 +1,3 @@
-
 .ComingSoon {
   display: flex;
   justify-content: center;
@@ -7,35 +6,61 @@
   height: 75vh;
 }
 
-.Sponsors {
- 
-  /* padding-top: 3.5rem; */
+
+
+.WrapSponsor {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  box-sizing: border-box;
+
 }
 
-.Sponsors h1 {
-  text-align: center;
-  font-size: 70px;
-  margin-bottom: 0px;
+.SponsorHeadDiv {
+  display: flex;
 }
+
+.Sponsor {
+  font-size: 3.8rem;
+  margin-top: 150px;
+  text-align: center;
+  font-weight: 600;
+  background-image: url(../assets/Images/timeline.svg) !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
 .com-name {
   font-size: 1.5rem;
 }
+
 .sub {
   color: rgb(205, 202, 202);
   font-size: large;
 }
+
 .SponsorDiv {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 10px 70px;
+  padding: 10px auto;
   width: 100%;
   height: 100%;
+  margin: auto;
 }
+
 .SponsorDetails {
-  margin: 40px;
+  margin: 40px auto;
   position: relative;
   display: flex;
   justify-content: center;
@@ -43,12 +68,16 @@
   text-align: center;
   width: 300px;
 }
-.head{
+
+.head {
+  text-align: center;
   height: 40vh;
-margin-top: 5rem;}
+  margin-top: 5rem;
+}
+
 .SponsorDetailsWrapper {
   background: var(--background-color);
-  padding: 20px;
+  padding: 20px auto;
   border-radius: 25px;
   height: 300px;
   width: 100%;
@@ -58,58 +87,75 @@ margin-top: 5rem;}
   align-items: center;
   justify-content: center;
 }
+
 .SponsorDetails img {
   width: auto;
   height: 7em;
   padding-top: 20px;
   margin-bottom: 1rem;
 }
+
 .SponsorDetails h2 {
   line-height: 1.75rem;
   margin-top: 20px;
 }
+
 .SponsorDetails a {
   z-index: 20;
   cursor: pointer;
   text-decoration: none !important;
   color: var(--text-color);
 }
+
 .SponsorDetails a:hover {
   color: var(--primary-blue-color);
 }
+
 .SponsorDetails h4 {
   color: var(--primary-blue-color);
 }
+
 @media screen and (max-width: 900px) {
   .SponsorDiv {
     height: 100%;
   }
+
   .techbairn img {
     width: 220px !important;
   }
 }
+
 @media screen and (max-width: 500px) {
+  .Sponsor {
+    font-size: 3.2rem;
+  }
+
   .code {
     min-width: 260px !important;
     height: 100%;
   }
+
   .SponsorDetails img {
     width: auto;
     height: 5em;
     padding-top: 10px;
   }
+
   .SponsorDetails {
     margin: 10px;
   }
+
   .code h4 {
     padding-bottom: 15px !important;
   }
+
   .Sponsors h1 {
     font-size: 50px;
   }
 }
-@media screen and (max-width: 500px) {
-  .Sponsors h1 {
-    font-size: 40px;
+
+@media screen and (max-width: 400px) {
+  .Sponsors {
+    font-size: 3rem;
   }
 }
